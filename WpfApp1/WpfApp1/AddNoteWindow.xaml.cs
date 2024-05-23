@@ -36,18 +36,18 @@ namespace WpfApp1
             using (var connection = new SQLiteConnection(connectionString))
             {
                 connection.Open();
-                int id = connection.ExecuteScalar<int>("INSERT INTO Notes (Title, Category, Content, CreationDate, ModificationDate) " +
-                                                        "VALUES (@Title, @Category, @Content, @CreationDate, @ModificationDate); " +
-                                                        "SELECT last_insert_rowid();",
-                                                        new
-                                                        {
-                                                            Title = title,
-                                                            Category = category,
-                                                            Content = content,
-                                                            CreationDate = currentDateTime,
-                                                            ModificationDate = currentDateTime
-                                                        });
-
+                int id = connection.ExecuteScalar<int>(
+                    "INSERT INTO Notes (Title, Category, Content, CreationDate, ModificationDate) " +
+                    "VALUES (@Title, @Category, @Content, @CreationDate, @ModificationDate);" +
+                    "SELECT last_insert_rowid();",
+                    new
+                    {
+                        Title = title,
+                        Category = category,
+                        Content = content,
+                        CreationDate = currentDateTime,
+                        ModificationDate = currentDateTime
+                    });
 
                 if (id > 0)
                 {

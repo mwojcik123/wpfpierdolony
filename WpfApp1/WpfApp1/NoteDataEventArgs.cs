@@ -8,7 +8,8 @@ namespace WpfApp1
         public string Title { get; set; }
         public string Category { get; set; }
         public string Content { get; set; }
-        public string OldTitle { get; set; }
+        public DateTime CreationDate { get; set; }
+    public string OldTitle { get; set; }
 
         public NoteDataEventArgs(int id, string title, string category, string content)
         {
@@ -16,7 +17,7 @@ namespace WpfApp1
             Title = title;
             Category = category;
             Content = content;
-
+            CreationDate = DateTime.Now;
         }
 
         public Note ToNote()
@@ -26,7 +27,8 @@ namespace WpfApp1
                 ID = ID,
                 Title = Title,
                 Category = Category,
-                Content = Content
+                Content = Content,
+                CreationDate = DateTime.Now,
             };
         }
     }

@@ -86,3 +86,4 @@ C:\Users\Marjanek\Downloads\ZadanieDapper\WpfApp1\WpfApp1\obj\Debug\net7.0-windo
 C:\Users\Marjanek\Downloads\ZadanieDapper\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\WpfApp1.pdb
 C:\Users\Marjanek\Downloads\ZadanieDapper\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\WpfApp1.genruntimeconfig.cache
 C:\Users\Marjanek\Downloads\ZadanieDapper\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\ref\WpfApp1.dll
+C:\Users\Marjanek\Downloads\ZadanieDapper\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\WpfApp1.sourcelink.json

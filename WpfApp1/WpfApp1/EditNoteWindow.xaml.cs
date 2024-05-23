@@ -66,7 +66,7 @@ namespace WpfApp1
                 connection.Execute("UPDATE Notes SET Title = @Title, Category = @Category, Content = @Content, ModificationDate = CURRENT_TIMESTAMP WHERE ID = @ID", new { Title = title, Category = category, Content = content, ID = note.ID });
             }
 
-            NoteDataEventArgs args = new NoteDataEventArgs(note.ID, title, category, content, note.Title);
+            NoteDataEventArgs args = new NoteDataEventArgs(note.ID, title, category, content);
             OnNoteDataUpdated(args);
 
             Close();
